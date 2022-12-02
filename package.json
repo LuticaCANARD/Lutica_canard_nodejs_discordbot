@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   },
   "name": "canard_discordbot",
   "version": "1.0.0",
