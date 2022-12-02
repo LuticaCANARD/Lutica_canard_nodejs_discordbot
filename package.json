@@ -6,7 +6,6 @@
   "version": "1.0.0",
   "description": "discord bot of lutica canard",
   "main": "bot.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
