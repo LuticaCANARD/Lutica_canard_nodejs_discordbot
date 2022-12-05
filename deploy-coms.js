@@ -1,14 +1,16 @@
 var os =require("os");
 const { REST, Routes } = require('discord.js');
+let links = '';
 
 if(os.platform()=='win32'||os.platform()=='win64')
 {
-	const { clientId, guildId } = require('./develop.json');
+	links = './develop.json';
 }
 else
 {
-	const { clientId, guildId } = require('./service.json');
+	links = './service.json';
 }
+const { clientId, guildId } = require(links);
 
 const token = process.env.TOKEN;
 const fs = require('node:fs');
