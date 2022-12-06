@@ -25,7 +25,7 @@ module.exports = {
             {
                 let vimpel = JSON.parse(body)
                 let strk = langclass.getLangStr(1);
-                let send_str = langclass.replaceStringVal(strk,['https://twitter.com/'+twitter_id+'/status/'+vimpel.data[0].id])
+                let send_str = langclass.replaceStringVal(strk,['https://twitter.com/'+twitter_id+'/status/'+vimpel.data[0].id+' ㄴ'])
                 interaction.reply(send_str)
             }
             else
