@@ -10,7 +10,8 @@
   "description": "discord bot of lutica canard",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node bot.js",
+    "start": "node deploy-coms.js&&node bot.js"
   },
   "keywords": [
     "\\"
