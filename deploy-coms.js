@@ -1,5 +1,6 @@
 var os =require("os");
 const { REST, Routes } = require('discord.js');
+const fs = require('node:fs');
 
 let clientId='';
 let guildId ='';
@@ -17,7 +18,7 @@ else
 }
 
 const token = process.env.TOKEN;
-const fs = require('node:fs');
+
 
 const commands = [];
 // Grab all the command files from the commands directory you created earlier

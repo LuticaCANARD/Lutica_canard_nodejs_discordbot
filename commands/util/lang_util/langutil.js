@@ -1,3 +1,4 @@
+const fs = require('node:fs');
 class langutil
 {
     constructor(lang)
@@ -13,7 +14,9 @@ class langutil
         }
         const data = require(langlink);
         this.strs = data;
+        set_lang = lang;
     }
+    set_lang = '';
     strs = {};
     supportlang = ['ko','ja','en'];
     /**
@@ -41,6 +44,19 @@ class langutil
         
         let ser = 'str_'+strcode
         return this.strs.data[ser]
+    }
+    changeLang(to_lang)
+    {
+        if(to_lang==this.set_lang)
+        {
+            return;
+        }
+        else
+        {
+            this.set_lang = to_lang;
+            const data = require(langlink);
+            this.strs = data;
+        }
     }
 
 }
