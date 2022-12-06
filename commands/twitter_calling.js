@@ -31,6 +31,7 @@ module.exports = {
             else
             {
                 let send_str = langclass.getLangStr('error');
+                console.log(err);
                 interaction.reply(send_str)
             }
            
