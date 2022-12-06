@@ -1,3 +1,4 @@
+const http = require('http');
 const path = require('node:path');
 const { Collection,Client, GatewayIntentBits,SlashCommandBuilder,Events, REST, Routes } = require('discord.js');
 const client = new Client({ 
@@ -11,7 +12,7 @@ const client = new Client({
 const fs = require('fs');
 client.commands = new Collection() 
 // 명령어 캐시 컬렉션을 클라이언트 내에 선언한다. 해당 방법으로 명령어 파일 내에서도 client.commands로 다른 명령어들에 접근할수 있다.
-
+http.createServer(function (request, response) {}).listen(process.env.PORT||5000)
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
