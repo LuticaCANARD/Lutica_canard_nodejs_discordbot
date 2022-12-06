@@ -11,7 +11,7 @@
   "main": "bot.js",
   "scripts": {
     "test": "node bot.js",
-    "start": "node deploy-coms.js&&node bot.js"
+    "start": "node deploy-coms.js&&node bot.js -p $PORT"
   },
   "keywords": [
     "\\"
