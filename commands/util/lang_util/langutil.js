@@ -14,7 +14,7 @@ class langutil
         }
         const data = require(langlink);
         this.strs = data;
-        set_lang = lang;
+        this.set_lang = lang;
     }
     set_lang = '';
     strs = {};
