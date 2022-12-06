@@ -11,15 +11,13 @@ const client = new Client({
     ] });
 const fs = require('fs');
 client.commands = new Collection() 
-// 명령어 캐시 컬렉션을 클라이언트 내에 선언한다. 해당 방법으로 명령어 파일 내에서도 client.commands로 다른 명령어들에 접근할수 있다.
-http.createServer(function (request, response) {}).listen(process.env.PORT||5000)
+http.createServer(function (request, response) {}).listen(process.env.PORT||5000); // FOR HEROKU.
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
 	const filePath = path.join(commandsPath, file);
 	const command = require(filePath);
-	// Set a new item in the Collection with the key as the command name and the value as the exported module
 	if ('data' in command && 'execute' in command) {
 		client.commands.set(command.data.name, command);
 	} else {
