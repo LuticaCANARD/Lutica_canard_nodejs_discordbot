@@ -26,11 +26,10 @@ class langutil
      */
     replaceStringVal(strings,values)
     {
-        let ret = '';
+        let ret = strings;
         for(let i=1;i<values.length+1;i++)
         {
-            let splt_str = strings.replace('<%'+i+'%>',values[i-1]);
-            ret+=splt_str
+            ret = ret.replace('<%'+i+'%>',values[i-1]);
         }
         return ret;
     }
