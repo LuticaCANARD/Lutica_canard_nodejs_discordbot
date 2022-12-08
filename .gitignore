@@ -1,3 +1,5 @@
 /node_modules
 develop.json
 service.json
+/security
+commands/util/virture_env/security
