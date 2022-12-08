@@ -4,7 +4,8 @@
         "str_1":"Cana\\'s last twit is... <%1%>",
         "str_error":"An Error was occure!",
         "str_2":"Link of this project is... <%1%>",
-        "str_3":"Translate <%1%> by <%2%> : <%3%>",
-        "str_dev" : "Sorry, This function is under development"
+        "str_3":"Translate <%1%> by <%2%> : \n <%3%>",
+        "str_dev" : "Sorry, This function is under development",
+        "str_tr_help":" Command [depature language] > [arrive languege] [option] (ko:korean/ja:japanese/en:english) \n list of option : \n -p:use papago\n -help:help"
     }
 }

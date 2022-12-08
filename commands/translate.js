@@ -18,8 +18,14 @@ module.exports = {
         let translate_origin = interaction.locale;
         let langclass = new langutil(translate_origin);
         let lang_to = ''
+        if(interaction.options._hoistedOptions[0].value=='help')
+        {
+            await interaction.reply(langclass.getLangStr("tr_help"));
+            return;
+        }
         let translate_con = interaction.options._hoistedOptions[1].value;
         let comm = interaction.options._hoistedOptions[0].value.split(' ');
+       
         if(comm[0].includes('>'))
         {
             let cods = comm[0].split('>');
