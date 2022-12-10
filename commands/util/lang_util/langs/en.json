@@ -4,8 +4,29 @@
         "str_1":"Cana\\'s last twit is... <%1%>",
         "str_error":"An Error was occure!",
         "str_2":"Link of this project is... <%1%>",
-        "str_3":"Translate <%1%> by <%2%> : \n <%3%>",
+        "str_3":"Translate <%1%> to <%2%> : \n <%3%>",
         "str_dev" : "Sorry, This function is under development",
-        "str_tr_help":" Command [depature language] > [arrive languege] [option] (ko:korean/ja:japanese/en:english) \n list of option : \n -p:use papago\n -help:help"
+        "str_tr_help":" Command [depature language] > [arrive languege] [option] (ko:korean/ja:japanese/en:english) \n list of option : \n -p:use papago\n -help:help",
+        "str_la_ko" : "Korean",
+        "str_la_ja" : "Japanese",
+        "str_la_zh-CN" : "Simplified Chinese",
+        "str_la_zh-TW" : "Traditional Chinese",
+        "str_la_hi" : "Hindi",
+        "str_la_en" : "English",
+        "str_la_es" : "Spanish",
+        "str_la_fr" : "French",
+        "str_la_de" : "German",
+        "str_la_pt" : "Portuguese",
+        "str_la_vi" : "Vietnamese",
+        "str_la_id" : "Indonesian",
+        "str_la_fa" : "Persian",
+        "str_la_ar" : "Arabic",
+        "str_la_mm" : "Burmese",
+        "str_la_th" : "Thai",
+        "str_la_ru" : "Russian",
+        "str_la_it" : "Italian"
+
+
+
     }
 }

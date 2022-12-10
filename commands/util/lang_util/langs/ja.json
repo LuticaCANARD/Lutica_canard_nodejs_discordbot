@@ -6,6 +6,24 @@
         "str_2":"このプロジェクトのリンクは <%1%> です",
         "str_3":"<%1%>言語を<%2%>で翻訳した結果 : \n <%3%>",
         "str_dev" : "すみません。今実行した機能は開発中です。",
-        "str_tr_help":" Command [出発言語] > [到着言語] [オプション] (ko:韓国語/ja:日本語/en:英語) \n オプションリスト : \n -p:papago 使用\n -help:使用方法"
+        "str_tr_help":" Command [出発言語] > [到着言語] [オプション] (ko:韓国語/ja:日本語/en:英語) \n オプションリスト : \n -p:papago 使用\n -help:使用方法",
+        "str_la_ko" : "韓国語",
+        "str_la_ja" : "日本語",
+        "str_la_zh-CN" : "簡体中文",
+        "str_la_zh-TW" : "繁体中文",
+        "str_la_hi" : "ヒンドゥー語",
+        "str_la_en" : "英語",
+        "str_la_es" : "スペイン語",
+        "str_la_fr" : "フランス語",
+        "str_la_de" : "ドイツ語",
+        "str_la_pt" : "ポルトガル語",
+        "str_la_vi" : "ベトナム語",
+        "str_la_id" : "インドネシア語",
+        "str_la_fa" : "ペルシア語",
+        "str_la_ar" : "アラビア語",
+        "str_la_mm" : "ビルマ語",
+        "str_la_th" : "タイヤ",
+        "str_la_ru" : "ロシア語",
+        "str_la_it" : "イタリア語"
     }
 }

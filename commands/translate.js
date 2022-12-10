@@ -154,8 +154,10 @@ module.exports = {
         }
         async function end()
         {
+            let dis_or_lang = "la_"+translate_origin;
+            let dis_to_lang = "la_"+lang_to;
             let return_string = langclass.replaceStringVal(langclass.getLangStr(3),
-            [translate_origin,lang_to,translated_text]);
+            [langclass.getLangStr(dis_or_lang),langclass.getLangStr(dis_to_lang),translated_text]);
             await interaction.reply(return_string);
         }
        
