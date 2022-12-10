@@ -8,7 +8,8 @@ module.exports = {
 		.setDescription('show github repogistry'),
 	async execute(interaction) {
         let langclass = new langutil(interaction.locale)
-        let return_string = langclass.replaceStringVal(langclass.getLangStr(2),['https://github.com/LuticaCANARD/Lutica_canard_nodejs_discordbot ']);
+        let return_string = langclass.replaceStringVal(langclass.getLangStr(2),
+		['https://github.com/LuticaCANARD/Lutica_canard_nodejs_discordbot ']);
 		await interaction.reply(return_string);
 	},
 };
