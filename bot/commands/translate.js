@@ -35,6 +35,7 @@ module.exports = {
                 await interaction.reply(langclass.getLangStr("tr_help"));
                 return;
             }
+            
             translate_con = interaction.options._hoistedOptions[1].value;
             let comm = interaction.options._hoistedOptions[0].value.split(' ');
            
@@ -75,17 +76,21 @@ module.exports = {
                     form: {'query': translate_con},
                     headers: {'X-Naver-Client-Id':vee.virtureenv('papagoID'), 'X-Naver-Client-Secret': vee.virtureenv('papagoSe')}
                     };
-                request.post(options, function (error, response, body) {
-                    if (!error && response.statusCode == 200) {
-                    translate_origin = JSON.parse(body).langCode;
-                    translationPapago();
-                    //console.log(translate_origin)
-                    } else {
-                    console.log('papago detecter error = ' + response.statusCode);
-                    let err_msg = '';
-                    if(error)err_msg = JSON.parse(error).errorMessage;
-                    interaction.reply('ERROR! : '+response.statusCode+"/"+err_msg);
-                    return;
+                request.post(options, function (error, response, body) 
+                {
+                    if (!error && response.statusCode == 200) 
+                    {
+                        translate_origin = JSON.parse(body).langCode;
+                        translationPapago();
+                        //console.log(translate_origin)
+                    }
+                    else
+                    {
+                        console.log('papago detecter error = ' + response.statusCode);
+                        let err_msg = '';
+                        if(error)err_msg = JSON.parse(error).errorMessage;
+                        interaction.reply('ERROR! : '+response.statusCode+"/"+err_msg);
+                        return;
                     }
                 })
             }

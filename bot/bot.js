@@ -10,8 +10,13 @@ const client = new Client({
       GatewayIntentBits.GuildMembers,
     ] });
 const fs = require('fs');
+
+
+/**
+ * Discord bot server
+ */
 client.commands = new Collection() 
-http.createServer(function (request, response) {}).listen(process.env.PORT||5000); // FOR HEROKU.
+//http.createServer(function (request, response) {}).listen(process.env.PORT||5000); // FOR HEROKU.
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 

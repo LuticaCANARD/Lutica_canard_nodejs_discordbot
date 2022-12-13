@@ -1,22 +1,40 @@
 {
   "dependencies": {
     "@google-cloud/translate": "^7.0.4",
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "@sveltejs/package": "next",
     "discord.js": "^14.7.1",
+    "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "svelte": "^3.54.0",
+    "svelte-check": "^2.9.2",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.1"
   },
   "name": "canard_discordbot",
   "version": "1.0.0",
   "description": "discord bot of lutica canard",
   "main": "bot.js",
   "scripts": {
-    "test": "node bot.js",
-    "start": "node deploy-coms.js&&node bot.js"
+    "test": "node ./bot/bot.js",
+    "start": "node ./init.js",
+    "dev": " cd ./web/ &&vite dev",
+    "build": "cd ./web/ &&svelte-kit sync && svelte-package",
+    "prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
+    "check": "cd ./web/ && svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "cd ./web/ &&svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
   },
   "keywords": [
     "\\"
   ],
   "author": "Lutica CANARD",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@mankins/svelte-adapter-express": "^0.1.2",
+    "@sveltejs/app-utils": "^1.0.0-next.0"
+  }
 }
