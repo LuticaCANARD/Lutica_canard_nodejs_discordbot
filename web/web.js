@@ -1,6 +1,8 @@
 //
-/**
- * Web server
+const http = require('http');
+const path = require('node:path');
+const express = require('express')
+ //Web server
 
 
 http.createServer(function (request, response) 
@@ -20,16 +22,16 @@ http.createServer(function (request, response)
 	response.writeHead(200,{'Content-Type': 'text/html; charset=utf-8' });
 	response.end(fs.readFileSync(web_url))
 }).listen(process.env.WEBPORT||5005,()=>{console.log('Web server is ready!');});
-*/
-const http = require('http');
-const path = require('node:path');
-const express = require('express')
+
+/**
+ *
 const app = express();
 var server=http.createServer(app)
 server.listen(process.env.WEBPORT||5005,()=>{console.log('Web server is ready!');});
 app.get('/healthcheck', (req, res) => {
     res.end('ok');
 });
+*/
  
 
 // 수동서버
