@@ -48,7 +48,8 @@ client.on(Events.InteractionCreate, async interaction => {
 	}
 });
 
-
+http.createServer(function (request, response) 
+{}).listen(process.env.PORT||5005,()=>{});
 client.on('ready',()=>{console.log('ready!')})
 
 // Log in to Discord with your client's token
