@@ -21,12 +21,7 @@
   "main": "bot.js",
   "scripts": {
     "test": "node ./bot/bot.js",
-    "start": "node ./init.js",
-    "dev": " cd ./web/ &&vite dev",
-    "build": "cd ./web/ &&svelte-kit sync && svelte-package",
-    "prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
-    "check": "cd ./web/ && svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-    "check:watch": "cd ./web/ &&svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
+    "start": "node ./init.js"
   },
   "keywords": [
     "\\"
