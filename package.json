@@ -21,7 +21,8 @@
   "main": "bot.js",
   "scripts": {
     "test": "node ./bot/bot.js",
-    "start": "node ./init.js"
+    "start": "node ./init.js",
+    "web_start" :"node ./web/web.js"
   },
   "keywords": [
     "\\"
