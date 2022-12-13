@@ -7,7 +7,6 @@ const express = require('express')
 
 http.createServer(function (request, response) 
 {
-	
 	let web_url = './web/front'
 	if(request.url=='/') {web_url += '/index.html'}
 	else if(request.url=='/favicon.ico') {return response.writeHead(404);}
