@@ -2,7 +2,7 @@
 develop.json
 service.json
 /security
-commands/util/virture_env/security
+/bot/commands/util/virture_env/security
 /Luticacanard_bot_web
 .DS_Store
 node_modules
