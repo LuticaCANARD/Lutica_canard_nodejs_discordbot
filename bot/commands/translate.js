@@ -47,6 +47,7 @@ module.exports = {
             }
             else
             {
+                if(flags?.papago) flags.papago_detect = true;
                 lang_to = comm[0];
             }
             if(comm.length>1)
