@@ -3,7 +3,7 @@ var request = require('request')
 var langutil = require('./util/lang_util/langutil.js');
 
 const twitter_codes = 1211259596062355456;
-const twitter_id = "presan100_JP"
+const twitter_id = "presan100_VRC"
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('last_twit_vrc')
